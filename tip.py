@@ -1,12 +1,26 @@
 import math
 
 
+print('Enter card tip')
+card_tip = input()
+card_tip = float(card_tip)
+
+print('Enter cash tip')
+cash_tip = input()
+cash_tip = float(cash_tip)
+
+total_tip = (card_tip * 0.97) + cash_tip
+total_tip = float(total_tip)
+tip_fee = card_tip * 0.03
+
+print('Total tip is: ${:.2f}'.format(total_tip))
+print('Card tip fee is ${:.2f}'.format(tip_fee))
+
 
 # Getting information of tips
 # Calculate kitchen tips and waitress tips
-print("Type total amout of tip")
-total_tip = input()
-total_tip = float(total_tip)
+
+
 w_tip = total_tip * 0.7
 k_tip = total_tip - w_tip
 print("Waitress total tip is {:.2f}".format(w_tip))
